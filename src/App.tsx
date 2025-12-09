@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useRef, useState } from "react";
 import L, { Map as LeafletMap, Marker as LeafletMarker } from "leaflet";
@@ -60,7 +61,6 @@ const RiderMap: React.FC = () => {
     if (!markerRef.current || !mountedRef.current) return;
 
     const startTime = Date.now();
-    const endTime = startTime + duration;
 
     const animateStep = () => {
       if (!markerRef.current || !mountedRef.current) {
